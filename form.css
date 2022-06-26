@@ -7,7 +7,7 @@
   }
   body {
     background-color: hsl(0, 100%, 74%);
-    background-image: url(/bg-intro-desktop.png);
+    background-image: url(bg-intro-desktop.png);
     font-family: 'Poppins', sans-serif;
   }
   .container {
@@ -85,6 +85,7 @@
     .container {
       flex-direction: column;
       margin: 40px auto;
+      background-image: url(bg-intro-mobile.png);
     }
     .text {
       text-align: center;
