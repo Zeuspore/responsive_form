@@ -30,7 +30,8 @@ h1{
     margin-bottom: 30px;
 }
 .form_side{
-    width: 80%;
+    width: 50%;
+    margin: 0 auto;
 }
 .form_header{
     width: 100%;
@@ -44,7 +45,7 @@ h1{
     width: 100%;
     background-color: #fff;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 20px 20px;
     border-radius: 8px;
     box-shadow: 0 6px 2px rgb(0 0 0 / 0.2);
@@ -109,12 +110,18 @@ small{
 
 @media screen and (max-width:1440px){
     .container{
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr;
         padding-top: 70px;
-    }   
+    } 
+    .left{
+        margin-left: 160px;
+        margin-top: 90px;
+    }  
     .form_side{
         margin: 0 auto;
+        margin-right: 120px;
+        margin-bottom: 50px;
     }
     .form_header{
         margin-top: 50px;
@@ -127,20 +134,11 @@ small{
     }
 
 }
-@media screen and (max-width:550px){
-    .form_side{
-        width: 85%;
-        margin: 0 auto;
-    }
-    .intro{
-        width: 80%;
-        text-align: center;
-    }
-   
-}
 @media screen and (max-width:375px){
     body{
         background-image: url(bg-intro-mobile.png);
+        direction: flex;
+        flex-direction: column;
     }
     h1{
         font-size: 1.5rem;
